@@ -1,7 +1,57 @@
 {{ template "header" . }}
-{{ template "nav" . }}
-{{ template "menu" . }}
+{{ $uri := index .Menu 1 }}
+<body>
+<div class="main">
+  {{ template "menu" . }}
+  <section class="content">
+    <form action="/{{$uri.Url}}" method="post">
+      <div class="form-group">
+        <div class="form-group has-feedback">
+          <input type="text" name="username" class="form-control" {{ if .Msg.Username }} value="{{.Msg.Username}}" {{ end }} placeholder="Username">
+        </div>
+        {{ with .Msg.Errors.Username }}
+          <strong class="text-danger">{{ . }}</strong>
+        {{ end }}
+      </div>
+      <div class="form-group">
+        <div class="form-group has-feedback">
+          <input type="text" name="system" class="form-control" {{ if .Msg.System }} value="{{.Msg.System}}" {{ end }} placeholder="System">
+        </div>
+        {{ with .Msg.Errors.System }}
+          <strong class="text-danger">{{ . }}</strong>
+        {{ end }}
+      </div>
+      <div class="form-group">
+        <div class="form-group has-feedback">
+          <input type="text" name="length" class="form-control" {{ if .Msg.Length }} value="{{.Msg.Length}}" {{ end }} placeholder="Length">
+        </div>
+        {{ with .Msg.Errors.Length }}
+          <strong class="text-danger">{{ . }}</strong>
+        {{ end }}
+      </div>
+      <div class="form-group">
+        <div class="form-group has-feedback">
+          <input type="text" name="greetings" class="form-control" {{ if .Msg.Greetings }} value="{{.Msg.Greetings}}" {{ end }} placeholder="Greetings">
+        </div>
+        {{ with .Msg.Errors.Greetings }}
+          <strong class="text-danger">{{ . }}</strong>
+        {{ end }}
+      </div>
+      <div class="form-group">
+        <div class="form-group has-feedback">
+          <input type="text" name="filename" class="form-control" {{ if .Msg.Filename }} value="{{.Msg.Filename}}" {{ end }} placeholder="Filename">
+        </div>
+        {{ with .Msg.Errors.Filename }}
+          <strong class="text-danger">{{ . }}</strong>
+        {{ end }}
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Generate</button>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
 
-{{ Title }}
-
-{{ Text }}
+{{ template "footer" . }}

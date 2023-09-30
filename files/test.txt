@@ -1,0 +1,15 @@
+
+ Buenos días
+ Por este medio remito las credenciales de acceso a SIPAP LBTR
+ Tener en cuenta las siguientes políricas de seguridad al cambiar la contraseña:
+ - No debe ser una palabra que pueda estar en algún diccionario, ni relacionado al nombre de usuario o entidad.
+ - No debe ser correlativo al anterior, ni similar en las últimas 10 contraseñas.
+ - Debe contener por los menos una mayúscula, una minúscula, un número y un carácter especial y de longitud mínima de 12.
+ - Vigencia mínima de contraseña, de 1(un) días. Un solo cambio por día es posible.
+ - Escriba su contraseña en un bloc de notas para luego copiar y pegar en el sistema.
+ USUARIO
+ BSUDPYPAXXX
+ CONTRASEÑA
+ jY%%E1X3h$yE
+ Favor dar acuse.
+ Saludos cordiales.

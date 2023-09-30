@@ -1,0 +1,14 @@
+h1 {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.main {
+  width: 1024px;
+  margin-left: 20px;
+  padding-left: 20px;
+  background-color: blueviolet;
+  text-align: center;
+}

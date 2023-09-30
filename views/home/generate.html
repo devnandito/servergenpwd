@@ -1,0 +1,14 @@
+{{ template "header" . }}
+{{ $uri := index .Menu 0 }}
+<body>
+<div class="main">
+  {{ template "menu" . }}
+  <section class="content">
+    {{ range .Lines }}
+    <P>{{ . }}</P>
+    {{ end }}    
+  </section>
+  <a href="{{$uri.Url}}" class="btn btn-primary">Volver</a>
+</div>
+
+{{ template "footer" . }}
